@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  
+  <main>
+    
+    <section>
+      <div class="card-bg-container">
+        
+        <div class="card-front">
+          <img src="images/bg-card-front.png" alt="card bg">
+          
+          <div class="card-front-content">
+            
+            <img src="images/card-logo.svg" alt="card front" class="card-front-icon">
+            
+            <div class="card-details">
+              
+              <p class="card-number-text">
+                1234 5678 9123 0000
+              </p>
+              
+              <div class="card-info">
+                <p class="card-name-text">Jane Appleseed</p>
+                
+                <p class="expiry-date">
+                  <span class="expiry-month-text">00</span> / <span class="expiry-year-text">00</span>
+                </p>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="card-back">
+          <img src="images/bg-card-back.png" alt="card bg">
+          
+          <p class="card-cvc-text">123</p>
+        </div>
+        
+      </div>
+    </section>
+    
+    <section class="form-section">
+      <form action="#">
+        
+        <div class="form-control">
+          <label for="card-name-input">Cardholder name</label>
+          
+          <input type="text" id="card-name-input" placeholder="e.g. Jane Appleseed" maxlength="20" >
+          
+          <p class="error-info">Can't be blank</p>
+        </div>
+        
+        <div class="form-control">
+          <label for="card-number-input">Card number</label>
+          
+          <input type="text" id="card-number-input" placeholder="e.g. 1234 5678 9123 0000" inputmode="numeric" maxlength="16" >
+          
+          <p class="error-info">Can't be blank</p>
+          <p class="error-info-format">Wrong format, Numbers only</p>
+          <p class="error-info-length">Must be 16 digits long</p>
+        </div>
+        
+        <div class="form-group">
+          
+          <div class="expiry-input-container">
+            <label for="month">Exp. Date (MM/YY)</label>
+            
+            <div>
+              <div class="form-control">
+                <input type="number" id="expiry-month-input" placeholder="MM" inputmode="numeric" >
+                
+                <p class="error-info">Can't be blank</p>
+              </div>
+              
+              <div class="form-control">
+                <input type="number" id="expiry-year-input" placeholder="YY" inputmode="numeric" >
+                
+                <p class="error-info">Can't be blank</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-control">
+            <label for="card-cvc-input">CVC</label>
+            
+            <input type="text" id="card-cvc-input" placeholder="e.g. 123" inputmode="numeric" maxlength="3">
+            
+            <p class="error-info">Can't be blank</p>
+          </div>
+          
+        </div>
+        
+        <button type="submit" class="btn submit-btn">Confirm</button>
+        
+      </form>
+      
+      <div class="thank-you">
+        
+        <img src="images/icon-complete.svg" alt="" class="complete-icon">
+        
+        <h2 class="thank-you-title">Thank you</h2>
+        
+        <p class="thank-you-text">We've added your card details</p>
+        
+        <button class="btn">
+          <a href="#">Continue</a>
+        </button>
+        
+      </div>
+    </section>
+    
+  </main>
+  
+</body>
+</html>
